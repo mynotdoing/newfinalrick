@@ -1,0 +1,426 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  position: relative;
+  max-width: 1440px;
+  height: 1119px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 15px;
+  
+}
+
+
+.facecont {
+  
+  
+  position: relative;
+  align-self: baseline;
+  top: 3%;
+  left: 5%;
+}
+
+/* For main page--------------------------------------------------------------------------------- */
+
+.mainlogo {
+  position: relative;
+  width: 50%;
+}
+
+/* For input */
+
+.searchbar {
+  position: relative;
+  width: 75%;
+  height: 5%;
+  left: -0.7%;
+  
+}
+.abouttz {
+  
+  align-self: baseline;
+  position: relative;
+  left: 12%;
+  margin-top: 3%;
+  text-decoration: none;
+}
+
+
+
+.searchbar input {
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+}
+
+.pagination {
+  
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination ul {
+ 
+  display: flex;
+  padding: 0;
+  gap: 1%;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+.paginationbtn a {
+  
+  color: white;
+  text-decoration: none;
+}
+
+.lens {
+  position: absolute;
+  left: 2%;
+  top: 40%;
+  z-index: 1;
+  color: rgba(0, 0, 0, 0.54);
+  width: 17.49px;
+  height: 17.49px;
+}
+
+/* For grid */
+
+.containergrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 75.5%;
+  gap: 6.5% 1%;
+  margin-top: 20px;
+  
+}
+
+.griditem {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12),
+    0px 2px 4px rgba(0, 0, 0, 0.14);
+  border-radius: 4px;
+  width: 240px;
+  height: 260px;
+}
+
+.gridimage {
+  border-radius: 8px 8px 0px 0px;
+  width: 240px;
+  background: #c4c4c4;
+}
+
+.infochar {
+  position: relative;
+  background-color: #ffffff;
+  top: -63px;
+  width: 100%;
+  min-height: 28%;
+  padding-top: 5px;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.infochar > .name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.87);
+  letter-spacing: 0.15px;
+  width: 208px;
+  min-height: 30px;
+  padding: 0;
+  margin: 0;
+  mix-blend-mode: normal;
+}
+
+.infochar .species {
+  width: 208px;
+  height: 21px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 0;
+  margin: 0;
+  mix-blend-mode: normal;
+}
+
+.about {
+  margin: 5%;
+}
+
+/* For second infopage---------------------------------------------------------------------------------------------- */
+
+.bnt {
+  position: absolute;
+  height: 21px;
+  left: 82px;
+  top: 23px;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+}
+
+.arrow {
+  align-self: flex-end;
+  margin-right: 5px;
+  position: relative;
+  top: -2px;
+}
+
+
+.cardimage {
+  position: absolute;
+  left: 40%;
+
+  top: 76px;
+
+  border-radius: 150px;
+}
+
+.cardname {
+  position: absolute;
+  min-width: 500px;
+  height: 50px;
+  left: 33%;
+  top: 392px;
+  line-height: 56px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.cardinformation {
+  position: absolute;
+  width: 500px;
+  left: 33%;
+  top: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cardinformation h4 {
+  color: #8e8e93;
+  align-self: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+.cardinformation div {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #6e798c;
+  border-bottom: 1px solid #8e8e93;
+  padding-bottom: 15px;
+}
+
+.cardinformation h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #081f32;
+}
+
+/* Для планшетів ------------------------------------------------------------------------------------ */
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  /* 1 page */
+  .mainlogo {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 5%;
+  }
+
+  .searchbar {
+    position: absolute;
+    width: 70%;
+    height: 56px;
+    left: 12.5%;
+    top: 28%;
+  }
+  .containergrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    row-gap: 6%;
+    top: 37%;
+  }
+
+  .griditem {
+    width: 300px;
+    margin-bottom: 40px;
+  }
+
+  .gridimage {
+    width: 300px;
+  }
+
+  /* 2 page   */
+
+  .bnt {
+    margin-top: 50px;
+    font-size: 40px;
+  }
+
+  .arrow {
+    width: 30px;
+  }
+
+  .cardimage {
+    left: 20%;
+    width: 60%;
+    top: 17%;
+
+    border-radius: 150px;
+  }
+  .cardname {
+    min-width: 1000px;
+    left: 16%;
+    margin-top: 50px;
+    top: 91%;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 75px;
+  }
+  .cardinformation {
+    top: 105%;
+    width: 600px;
+    left: 27%;
+  }
+  .cardinformation h4 {
+    font-size: 40px;
+  }
+  .cardinformation div {
+    font-size: 25px;
+  }
+
+  .cardinformation h2 {
+    font-size: 30px;
+  }
+}
+
+/* Для мобільних --------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .mainlogo {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    left: 12%;
+    top: 14%;
+  }
+
+  .searchbar {
+    position: absolute;
+    width: 80%;
+    height: 56px;
+    left: 9%;
+    top: 55%;
+  }
+  .containergrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    row-gap: 6%;
+    top: 67%;
+  }
+
+  .griditem {
+    width: 300px;
+    margin-bottom: 40px;
+  }
+
+  .gridimage {
+    width: 300px;
+  }
+
+  /* second page--------------------------- */
+
+  .bnt {
+    margin-top: 40px;
+    font-size: 50px;
+  }
+
+  .arrow {
+    width: 40px;
+  }
+
+  .cardimage {
+    left: 15%;
+    width: 70%;
+    top: 15%;
+
+    border-radius: 150px;
+  }
+  .cardname {
+    width: 1000px;
+    left: 17%;
+    top: 110%;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 75px;
+  }
+  .cardinformation {
+    top: 123%;
+    width: 1000px;
+    left: 15%;
+  }
+  .cardinformation h4 {
+    font-size: 70px;
+  }
+  .cardinformation div {
+    font-size: 45px;
+  }
+
+  .cardinformation h2 {
+    font-size: 50px;
+  }
+}
