@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/newfinalrick/static/css/main.4d3db293.css",
+    "main.css": "/newfinalrick/static/css/main.b6b54b2c.css",
     "main.js": "/newfinalrick/static/js/main.d309974e.js",
     "static/media/rick.png": "/newfinalrick/static/media/rick.5d713b1e7be9cb53079f.png",
     "index.html": "/newfinalrick/index.html",
-    "main.4d3db293.css.map": "/newfinalrick/static/css/main.4d3db293.css.map",
+    "main.b6b54b2c.css.map": "/newfinalrick/static/css/main.b6b54b2c.css.map",
     "main.d309974e.js.map": "/newfinalrick/static/js/main.d309974e.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d3db293.css",
+    "static/css/main.b6b54b2c.css",
     "static/js/main.d309974e.js"
   ]
 }
