@@ -13,7 +13,7 @@ import About from "./components/mainpage/Main/About";
 // також в ньому ми створюємо через хук useState головні стейти які потім будемо передавати далі в компоненти
 
 function App() {
-  // створюю стейт з значенням pageNumber якщо б в нас була пагінація
+  // створюю стейт з значенням pageNumber якщо б в нас була пагінація!!!!
   let [pageNumber, setPageNumber] = useState(1);
 
   let [search, setSearch] = useState(""); // ???
