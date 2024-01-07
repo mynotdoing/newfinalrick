@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/newfinalrick/static/css/main.40c6f8d1.css",
+    "main.js": "/newfinalrick/static/js/main.3c9fac09.js",
+    "static/media/rick.png": "/newfinalrick/static/media/rick.5d713b1e7be9cb53079f.png",
+    "index.html": "/newfinalrick/index.html",
+    "main.40c6f8d1.css.map": "/newfinalrick/static/css/main.40c6f8d1.css.map",
+    "main.3c9fac09.js.map": "/newfinalrick/static/js/main.3c9fac09.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40c6f8d1.css",
+    "static/js/main.3c9fac09.js"
+  ]
+}

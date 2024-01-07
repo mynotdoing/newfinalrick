@@ -5,7 +5,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 
 
-export default function Input({setSearch}) {
+export default function Input({setSearch, setPageNumber}) {
 
 
     const [inputValue, setInputValue] = useState('');
@@ -24,7 +24,8 @@ export default function Input({setSearch}) {
       const newValue = event.target.value;
       setInputValue(newValue);
       localStorage.setItem('inputValue', newValue);
-      setSearch(newValue);
+      setSearch(newValue); // передаємо наверх щоб потім це попало в query
+      setPageNumber(1) // коли ми засетали setSearch ми також хочемо щоб була сторінка 1
     }
 
 

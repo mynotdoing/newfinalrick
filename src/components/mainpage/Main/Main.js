@@ -5,6 +5,8 @@ import { NavLink } from "react-router-dom";
 // import Facebook from "./Facebook";
 import Pagination from "../../Pagination/Pagination";
 
+
+// витягуємо передані пропси з App де ми робили запит
 export default function Main({
   results,
   setSearch,
@@ -19,10 +21,12 @@ export default function Main({
   if (results) {
     display = results.map((item) => {
       let { id, name, image, species } = item;
-
+// при кліку на img ми переходимо на <NavLink to={"/info/" + id}> яка нас перекине на новий роут
+// який описаний на сторінці роутів <Route path="/info/:id" element={<Infopage />} />
+// там буде вже новий запит але з врахуванням id персонажа (яке ми знаємо з головного запиту)
       return (
         <div className="griditem" key={id}>
-          <NavLink to={"/info/" + id}>
+          <NavLink to={"/info/" + id}> 
             <img className="gridimage" src={image} alt="pic" />
           </NavLink>
 
@@ -41,13 +45,14 @@ export default function Main({
     <>
       <div className="abouttz">
         <NavLink to="/about">
-          <h3> Технічне завдання</h3>
+          <h3> Технічне завдання проєкту</h3>
         </NavLink>
       </div>
 
       <img className="mainlogo" src={logo} alt="logo" />
 
-      <Input setSearch={setSearch} />
+      <Input setSearch={setSearch}
+      setPageNumber={setPageNumber} />
 
       <div className="containergrid">{display}</div>
       <Pagination

@@ -3,6 +3,12 @@ import { NavLink, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import arrow from "./../../../img/arrow.png";
 
+
+
+// на цій сторінці коли ми перейшли ми першим ділом 
+// отримуємо значення з строки урла id використовуючи useParams
+// потім ми створюємо новий запит в який передаємо цей конкретний id і він нам повертає конкретного персонажа
+// його ми сетаємо в useState fetchedData і потім вже відмальовуємо на сторінці
 export default function Infopage() {
   let { id } = useParams();
   let api = `https://rickandmortyapi.com/api/character/${id}`;
